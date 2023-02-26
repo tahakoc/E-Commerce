@@ -98,6 +98,57 @@ header{
     font-size: .75rem;
 }
 
+.header-right .header-right-links{
+
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    
+}
+
+.header-right .bi-person{
+    font-size: 1.4375rem;
+}
+
+.header-right .toggle-button {
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.header-right i{
+    font-size: 1.125rem;
+    display: flex;
+}
+
+
+.header-right .header-cart{
+    position: relative;
+}
+
+
+
+.header-right .header-cart-link .header-cart-count{
+
+    width: 1rem;
+    height: 1rem;
+
+    background-color: #1367ef;
+    color: white;
+    font-size: .625rem;
+    border-radius: 100%;
+    position: absolute;
+    top: -0.75rem;
+    right: -0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+
+
+    
+}
 
 
 /*! HEADER CSS START */
