@@ -89,6 +89,9 @@ header{
 
 .header-center .menu-list .menu-list-item{
     display: flex;
+    align-items: center;
+    position: relative;
+    height: 5.625rem;
 }
 
 
@@ -180,6 +183,50 @@ header{
 
     
 }
+
+/*? Menu Dropdown Start */
+
+header .menu-dropdown-wrapper{
+    position: absolute;
+    top: 100%;
+    left: -1.875rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease;
+}
+
+
+header .menu-dropdown-content{
+    width: 13.75rem;
+    background-color: #fff;
+    border: 1px solid #dee0ea;
+  
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0;
+
+}
+
+header .menu-dropdown-content a{
+    display: flex;
+    padding: .25rem 1.875rem;
+    font-size: .875rem;
+
+    transition: color .2s ease;
+
+}
+
+
+header .menu-dropdown-content a:hover{
+    color: #1367ef;
+}
+
+.header-center .menu-list .menu-list-item:hover .menu-dropdown-wrapper{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*? Menu Dropdown End */
 
 
 /*! HEADER CSS START */
