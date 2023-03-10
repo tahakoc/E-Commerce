@@ -348,4 +348,165 @@ header .menu-dropdown-content a:hover{
 /*? Menu Dropdown End */
 
 
-/*! HEADER CSS START */
+/*! HEADER CSS END */
+
+
+.modal-search{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   visibility: hidden;
+
+}
+
+.modal-search::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+
+}
+
+.modal-wrapper{
+    max-width: 50rem;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    position: fixed;
+    padding: 1.875rem;
+}
+
+
+.modal-wrapper img{
+    max-width: 12.5rem;
+}
+
+.modal-search .modal-title{
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.modal-search .modal-text{
+    font-size: .875rem;
+    color: #7a7a7a;
+    padding-bottom: .9375rem;
+    border-bottom: .0625rem solid #dee0ea;
+}
+
+.modal-search .search-form{
+    margin-top: .9375rem;
+    display: flex;
+    position: relative;
+}
+
+.modal-search .search-form::after{
+    content: "";
+    width: 100%;
+    height: .0625rem;
+    background-color: #dee0ea;
+    position: absolute;
+    bottom: -0.9375rem;
+}
+
+.modal-search .search-form input{
+    width: 100%;
+    max-height: 2.625rem;
+    border-color: #dee0ea !important;
+}
+
+.modal-search .search-form button{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: .9375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .0625rem solid #dee0ea;
+}
+
+.modal-search .search-form button i{
+    font-size: 1.125rem;
+    color: #7a7a7a;
+}
+
+.modal-search .search-results{
+    margin-top: 1.875rem;
+}
+
+
+.modal-search .search-heading{
+    padding: .9375rem;
+    background-color: #f9f9f9;
+    border: .0625rem solid #dee0ea;
+}
+
+
+.modal-search .search-heading h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.modal-search .results{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    border-left: .0625rem solid #dee0ea;
+}
+
+.modal-search .results .result-item{
+    display: flex;
+    align-items: center;
+    padding: .9375rem;
+    border-bottom: .0625rem solid #dee0ea;
+    border-right: .0625rem solid #dee0ea;
+    column-gap: 1rem;
+
+    transition: background-color 0.2s ease;
+
+}
+
+
+.modal-search .results .result-item:hover{
+   background-color: #f9f9f9;
+}
+
+.modal-search .result-item .search-thumb{
+    max-width: 4.0625rem;
+    width: 100%;
+}
+
+.modal-search .search-info{
+    font-size: .875rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-search .search-sku{
+ color: #7a7a7a;
+ margin: .125rem 0;    
+}
+
+.modal-search .search-price{
+    font-weight: 600;
+    color: #dc3545;
+}
+
+.modal-search .bi-x-circle{
+    position: absolute;
+    top: .3125rem;
+    right: .625rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+
+}
