@@ -1,0 +1,6 @@
+/*! Global css */
+
+@import url(base.css);
+@import url(/css/components/modal-search.css);
+ @import url(/css/layout/header.css);
+@import url(/css/components/slider.css)
